@@ -1,0 +1,9 @@
+{
+  "id": "whats-new-2",
+  "kind": "whatsNew2",
+  "enabled": false,
+  "audience": "upgrades",
+  "minimumVersion": "2.0",
+  "maximumVersionExclusive": "3.0",
+  "expiresAt": null
+}
