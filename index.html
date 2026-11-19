@@ -1,9 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <meta name="apple-itunes-app" content="app-id=1377664098, affiliate-data=10l3KS&ct=pppbanner">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Break Free Tracker – Support</title>
+    <title>Break Free Tracker – One day at a time</title>
+    <meta name="description" content="Track the days since you left a habit behind. Set goals, log relapses and see your progress with Break Free Tracker for iPhone and iPad.">
 
     <style type="text/css" media="screen">
       :root{
@@ -11,7 +13,6 @@
         --muted: #3a3a3c;
         --bg: #ffffff;
         --card: #f5f5f7;
-        /* usa un rosso meno “alert” rispetto a #ff3c3c */
         --accent: #c82e2e;
       }
 
@@ -59,19 +60,34 @@
       }
 
       .left {
-        flex: 0 0 420px;
+        flex: 0 0 360px;
       }
 
       .right {
         flex: 1 1 auto;
+        min-width: 0;
       }
 
       .phone-shot {
         width: 100%;
-        max-width: 452px;
+        max-width: 320px;
         height: auto;
         display: block;
         margin: 0 auto;
+      }
+
+      .phone-shot {
+        box-sizing: border-box;
+        border: 7px solid #1c1c1e;
+        border-radius: 42px;
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+      }
+
+      .lead {
+        margin-top: 0;
+        font-size: 22px;
+        line-height: 1.4;
+        font-weight: 500;
       }
 
       .section-title {
@@ -126,6 +142,25 @@
         color: var(--accent);
       }
 
+      a:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 5px;
+        border-radius: 4px;
+      }
+
+      .footer a {
+        color: var(--muted);
+        text-underline-offset: 3px;
+      }
+
+      .footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 24px;
+        margin-bottom: 12px;
+      }
+
       .footer {
         text-align: center;
         color: var(--muted);
@@ -139,7 +174,8 @@
           flex-direction: column;
           align-items: stretch;
         }
-        .left { flex: none; }
+        .left { flex: none; order: 1; }
+        .phone-shot { max-width: 300px; }
         h1 { font-size: 30px; }
         body { font-size: 17px; }
       }
@@ -147,39 +183,34 @@
   </head>
 
   <body>
-    <div id="content">
+    <main id="content">
       <div class="header">
         <h1><a href="https://itunes.apple.com/app/id1377664098">Break Free Tracker</a></h1>
       </div>
 
       <div class="layout">
         <div class="left">
-          <img class="phone-shot" src="overview3.png" alt="Break Free Tracker screenshot">
+          <img class="phone-shot" src="images/breakfree-2-counters.webp"
+               width="880" height="1912" fetchpriority="high" decoding="async"
+               alt="Break Free 2.0 counters with days since each habit, goal progress and the Results and Profile tabs">
         </div>
 
         <div class="right">
-          <p>Break Free Tracker helps you track days free from habits you want to quit.</p>
+          <p class="lead">Count the days since you left a habit behind.</p>
+          <p>Create a counter for each habit you want to quit and see how far you’ve come, one day at a time.</p>
 
-          <p>Create a counter for a behaviour you’re trying to stop and let it increase one day at a time. The app stays in the background, while you focus on your day.</p>
-
-          <div class="section-title">Features</div>
+          <h2 class="section-title">Free to use, with no ads</h2>
           <ul>
-            <li>Create multiple counters for different habits</li>
-            <li>Set a goal for a counter, or let it run indefinitely</li>
-            <li>Get notified when you reach a milestone</li>
-            <li>Track your progress from the Lock Screen with widgets</li>
-            <li>Add notes to counters and relapses</li>
-            <li>Simple animations when a goal is reached</li>
-            <li>Optional dark theme</li>
+            <li>Start multiple counters and set a first goal for each one, or count days with no end date.</li>
+            <li>Log relapses and add notes to remember what happened.</li>
+            <li>See your longest streak, completed goals and archived counters in Results.</li>
+            <li>Check your progress with Home Screen and Lock Screen widgets and turn on milestone notifications.</li>
           </ul>
 
-          <div class="section-title">Upgrade</div>
-          <p>The app is free to use and contains no ads.</p>
-          <p>An optional upgrade unlocks additional customizations:</p>
-          <ul>
-            <li>Customize counter colors</li>
-            <li>Choose different completion animations</li>
-          </ul>
+          <h2 class="section-title">Break Free Premium</h2>
+          <p>The optional subscription lets you look back at starts, relapses and milestones on the calendar, explore advanced statistics, and add more goals to the same counter or edit an active goal. You can also choose counter colours and animations to celebrate reaching a goal.</p>
+
+          <p><a class="help-link" href="News.html">Explore what’s new in Break Free 2.0</a></p>
 
           <div class="cta">
             <div class="store-row">
@@ -196,7 +227,14 @@
         </div>
       </div>
 
-      <div class="footer">&copy; Alessio Orlando</div>
-    </div>
+      <footer class="footer">
+        <nav aria-label="Support and information">
+          <a href="mailto:breakfreeiosapp@gmail.com">Contact support</a>
+          <a href="PrivacyPolicy.html">Privacy policy</a>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use</a>
+        </nav>
+        &copy; Alessio Orlando
+      </footer>
+    </main>
   </body>
 </html>
