@@ -1,9 +1,9 @@
 {
-  "id": "whats-new-2-test-20261113",
+  "id": "whats-new-2",
   "kind": "whatsNew2",
   "enabled": true,
   "audience": "everyone",
   "minimumVersion": "2.0.0",
-  "maximumVersionExclusive": "2.0.1",
-  "expiresAt": "2026-11-13T17:13:17Z"
+  "maximumVersionExclusive": "2.1.0",
+  "expiresAt": null
 }
